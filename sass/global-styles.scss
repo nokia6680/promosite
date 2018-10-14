@@ -49,6 +49,10 @@ body {
     background-image: url('../img/site-bg-hd.jpg');
     background-size: cover;
   }
+
+  @media (min-width: $hd) {
+    background-size: contain;
+  }
 }
 
 img {

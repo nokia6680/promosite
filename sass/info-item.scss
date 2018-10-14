@@ -99,7 +99,7 @@
   .info-item {
     padding-right: 5px;
     padding-left: 5px;
-    
+
     &__title {
       font: {
         size: 28px;
@@ -119,6 +119,39 @@
 
     &:first-of-type {
       border-right: 4px solid #e43526;
+      border-bottom: none;
+    }
+
+    &:last-of-type {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .info-item {
+    padding-right: 5px;
+    padding-left: 5px;
+
+    &__title {
+      font: {
+        size: 39px;
+      }
+
+      margin-top: 0;
+      letter-spacing: 0.6px;
+    }
+
+    &__date {
+      font: {
+        size: 37px;
+      }
+      letter-spacing: 0.5px;
+      margin-top: 0;
+    }
+
+    &:first-of-type {
+      border-right: 7px solid #e43526;
       border-bottom: none;
     }
 

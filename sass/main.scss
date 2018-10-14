@@ -27,9 +27,13 @@
 }
 
 @media (min-width: $widebooks) {
-
+  .main {
+    max-width: 660px;
+  }
 }
 
 @media (min-width: $large-widebooks) {
-
+  .main {
+    max-width: 930px;
+  }
 }

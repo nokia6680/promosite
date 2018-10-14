@@ -237,3 +237,54 @@
     }
   }
 }
+
+@media (min-width: $hd) {
+  .info-promo {
+    width: 890px;
+    /*Плашка в уголках*/
+    &__schedule {
+      background-size: 334px 97px;
+
+      width: 340px;
+      height: 97px;
+
+      padding-left: 5px;
+      padding-right: 5px;
+
+      padding-top: 20px;
+    }
+
+    &__title {
+      font: {
+        size: 28px;
+      }
+
+      letter-spacing: 0.5px;
+    }
+
+    &__date {
+      font: {
+        size: 70px;
+      }
+
+      letter-spacing: 0.7px;
+      margin-top: -5px;
+    }
+
+    /*Ограничение лет*/
+    &__ages {
+      background-size: 113px 101px;
+
+      width: 113px;
+      height: 101px;
+    }
+
+    &__limit {
+      font: {
+        size: 71px;
+      }
+
+      padding-top: 12px;
+    }
+  }
+}

@@ -51,3 +51,36 @@
     }
   }
 }
+
+@media (min-width: $widebooks) {
+  .content {
+    padding-top: 20px;
+
+    &__image {
+      width: 561px;
+      height: 544px;
+    }
+  }
+}
+
+@media (min-width: $large-widebooks) {
+  .content {
+    padding-top: 100px;
+
+    &__image {
+      width: 561px;
+      height: 544px;
+    }
+  }
+}
+
+@media (min-width: $hd) {
+  .content {
+    padding-top: 20px;
+
+    &__image {
+      width: 682px;
+      height: 662px;
+    }
+  }
+}
