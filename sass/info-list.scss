@@ -1,0 +1,24 @@
+.info-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media (min-width: $mobile) {
+  .info-list {
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: $notebooks) {
+  .info-list {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

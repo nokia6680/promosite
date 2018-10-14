@@ -1,0 +1,176 @@
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100%;
+
+  &__first--mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__first--desktop {
+    display: none;
+  }
+
+  &__title {
+    font: {
+      family: $base-font;
+      size: 72.8px;
+      weight: 900;
+    }
+
+    color: $text-blue;
+    line-height: 1;
+
+    background-color: $text-blue;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(82,184,227,0.64) 1px 1px 1px;
+
+    margin-top: -30px;
+    margin-bottom: 0;
+
+    letter-spacing: 1px;
+  }
+
+  &__text {
+    font: {
+      family: $base-font;
+      size: 28px;
+      weight: 900;
+    }
+
+    color: $text-blue;
+    line-height: 1;
+
+    background-color: $text-blue;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgba(82,184,227,0.64) 1px 1px 1px;
+
+    margin-top: 0;
+
+    letter-spacing: 1.2px;
+
+    &--purple {
+      color: $text-purple;
+      background-color: $text-purple;
+      text-shadow: rgba(127,71,150,0.64) 1px 1px 1px;
+
+      margin-top: -18px;
+    }
+
+    &--navy {
+      margin-top: -7px;
+
+      letter-spacing: 0.3px;
+    }
+  }
+}
+
+@media (min-width: $mobile) {
+  .info {
+
+    &__title {
+      font: {
+        size: 112px;
+      }
+
+      margin-top: -50px;
+    }
+
+    &__text {
+      font: {
+        size: 43px;
+      }
+
+      margin-top: 0;
+
+      letter-spacing: 1.7px;
+
+      &--purple {
+        margin-top: -28px;
+      }
+
+      &--navy {
+        margin-top: -10px;
+        letter-spacing: 0.17px;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablets) {
+  .info {
+    &__title {
+      font: {
+        size: 170px;
+      }
+
+      margin-top: 0px;
+    }
+
+    &__text {
+      font: {
+        size: 66px;
+      }
+
+      margin-top: 0;
+
+      letter-spacing: 1.7px;
+
+      &--purple {
+        margin-top: -40px;
+      }
+
+      &--navy {
+        margin-top: -15px;
+        letter-spacing: -0.4px;
+      }
+    }
+  }
+}
+
+@media (min-width: $notebooks) {
+  .info {
+    &__first--mobile {
+      display: none;
+    }
+
+    &__first--desktop {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__title {
+      font: {
+        size: 45px;
+      }
+
+      margin-top: 0px;
+    }
+
+    &__text {
+      font: {
+        size: 63px;
+      }
+
+      margin-top: -15px;
+
+      letter-spacing: 0.8px;
+    }
+  }
+}

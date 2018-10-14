@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+
+  width: 100%;
+}
+
+@media (min-width: $mobile) {
+
+}
+
+@media (min-width: $widebooks) {
+
+}
+
+@media (min-width: $large-widebooks) {
+
+}

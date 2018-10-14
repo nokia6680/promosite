@@ -1,0 +1,35 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 320px;
+}
+
+@media (min-width: $mobile) {
+  .main {
+    max-width: 460px;
+  }
+}
+
+@media (min-width: $tablets) {
+  .main {
+    max-width: 670px;
+  }
+}
+
+@media (min-width: $notebooks) {
+  .main {
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: $widebooks) {
+
+}
+
+@media (min-width: $large-widebooks) {
+
+}
